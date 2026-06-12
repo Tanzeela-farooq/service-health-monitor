@@ -21,4 +21,8 @@ paths:
                   status:
                     type: string
                     description: Current health status for the service.
+                    enum:
+                      - healthy
+                      - degraded
+                      - unhealthy
                     example: healthy

@@ -5,7 +5,7 @@ metadata:
   title: Service Health Monitor API
   description: Simple backend API that exposes a health endpoint for service monitoring.
   annotations:
-    github.com/project-slug: Tanzeela-farooq/service-health-monitor
+    github.com/project-slug: tanzeela-farooq/service-health-monitor
   tags:
     - api
     - rest
