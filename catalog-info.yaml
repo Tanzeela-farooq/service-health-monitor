@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: service-health-monitor-api
+  title: Service Health Monitor API
+  description: Simple backend API that exposes a health endpoint for service monitoring.
+  annotations:
+    github.com/project-slug: tanzeela-farooq/service-health-monitor
+  tags:
+    - api
+    - rest
+    - health-monitoring
+  labels:
+    division: enabling_functions
+    platform: engineering_enablement_platform_ef
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: tanzeela-farooq
+  definition:
+    $text: ./openapi.yaml
