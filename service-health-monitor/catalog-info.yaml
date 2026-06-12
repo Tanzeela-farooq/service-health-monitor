@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: service-health-monitor
+  description: FastAPI backend service exposing a health endpoint
+  annotations:
+    github.com/project-slug: <Tanzeela-farooq>/service-health-monitor
+  links:
+    - url: http://localhost:8000/health
+      title: Health Endpoint
+      icon: dashboard
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
