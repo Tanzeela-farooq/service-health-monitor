@@ -1,0 +1,24 @@
+openapi: 3.0.3
+info:
+  title: Service Health Monitor API
+  version: 0.1.0
+  description: API contract for the service health monitor backend.
+paths:
+  /health:
+    get:
+      summary: Get service health status
+      operationId: getHealth
+      responses:
+        '200':
+          description: Service health status
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - status
+                properties:
+                  status:
+                    type: string
+                    description: Current health status for the service.
+                    example: healthy
